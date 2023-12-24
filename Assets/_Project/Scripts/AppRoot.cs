@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
-using TMPro;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
@@ -39,16 +38,12 @@ namespace _Project
             
             foreach (var (state, trackable) in trackables)
             {
-                // var strings = trackable.name.Split("__");
-                // if (strings.Length != 2)
-                //     continue;
                 var key = _record.key;
                 Debug.Log($"Tracked {key} : {state}");
                 switch (state)
                 {
                     case TrackableState.Added:
                         trackable.EnableTransform(key);
-                        trackable.transform.up = _record.plane.normal;
                         break;
                     case TrackableState.Removed:
                         trackable.DisableAll();

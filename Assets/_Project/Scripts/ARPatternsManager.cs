@@ -154,13 +154,5 @@ namespace _Project
                     yield return (TrackableState.Updated, sw);
             }
         }
-
-        private void Update()
-        {
-            if (_task != null)
-            {
-                print(_task.Value.status);
-            }
-        }
     }
 }
