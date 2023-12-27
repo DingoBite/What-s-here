@@ -80,8 +80,7 @@ namespace _Project
             var angleScore = (int) (100 * angleScoreF);
             var weightedScore = 0;
             
-            if (angleScore >= 0)
-                weightedScore = (int)((1 - _angleWeight) * score + angleScore * _angleWeight);
+            weightedScore = (int)((1 - _angleWeight) * score + angleScore * _angleWeight);
             
             Debug.Log($"Text recognize: Try to add {weightedScore} : {score} : {angleScore}");
             if (weightedScore <= _record.score || weightedScore < 0)

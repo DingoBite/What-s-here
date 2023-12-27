@@ -64,26 +64,25 @@ public class TesseractDriver
 
     private async void CopyAllFilesToPersistentData(List<string> fileNames, UnityAction onSetupComplete)
     {
-        String fromPath = "jar:file://" + Application.dataPath + "!/assets/";
+        String fromPath = Application.streamingAssetsPath + "/";
         String toPath = Application.persistentDataPath + "/";
 
         foreach (String fileName in fileNames)
         {
             if (!File.Exists(toPath + fileName))
             {
-                Debug.Log("Copying from " + fromPath + fileName + " to " + toPath);
-                WWW www = new WWW(fromPath + fileName);
+                // Debug.Log("Copying from " + fromPath + fileName + " to " + toPath);
+                // WWW www = new WWW(fromPath + fileName);
+                //
+                // while (!www.isDone)
+                // {
+                //     await Task.Delay(TimeSpan.FromSeconds(Time.deltaTime));
+                // }
 
-                while (!www.isDone)
-                {
-                    await Task.Delay(TimeSpan.FromSeconds(Time.deltaTime));
-                }
-
-                var wwwBytes = www.bytes;
-                await File.WriteAllBytesAsync(toPath + fileName, wwwBytes);
+                // var wwwBytes = www.bytes;
+                var bytes = await File.ReadAllBytesAsync(fromPath + fileName);
+                await File.WriteAllBytesAsync(toPath + fileName, bytes);
                 Debug.Log("File copy done");
-                www.Dispose();
-                www = null;
             }
             else
             {

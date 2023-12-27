@@ -408,17 +408,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310691462}
-  m_LocalRotation: {x: -0, y: -0.010772347, z: -0, w: 0.99994206}
-  m_LocalPosition: {x: 0, y: 0, z: 0.059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 520179226}
-  m_LocalEulerAnglesHint: {x: 0, y: -1.234, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.31, y: -0.412}
-  m_SizeDelta: {x: 1, y: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310691464
 MonoBehaviour:
@@ -1200,7 +1200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.018, y: 0.613}
+  m_AnchoredPosition: {x: -1.847, y: 0.613}
   m_SizeDelta: {x: 0.192, y: 0.108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &763402292
@@ -2011,7 +2011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1668233224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2197,8 +2197,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995228973}
-  m_LocalRotation: {x: -0, y: -0.010772347, z: -0, w: 0.99994206}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2206,8 +2206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0975, y: 0.0598}
-  m_SizeDelta: {x: 0.0027, y: -0.0482}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995228975
 MonoBehaviour:
@@ -2659,7 +2659,7 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 1073741847
-  _drawOutline: 0
+  _drawOutline: 1
 --- !u!4 &2102867156
 Transform:
   m_ObjectHideFlags: 0
@@ -2726,7 +2726,7 @@ MonoBehaviour:
   _nameResolver: {fileID: 2102867158}
   _arPatternsManager: {fileID: 2102867157}
   _scoreToStopRecognize: 90
-  _angleWeight: 0.5
+  _angleWeight: 0
 --- !u!33 &265029379966953273
 MeshFilter:
   m_ObjectHideFlags: 0

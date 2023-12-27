@@ -9,7 +9,7 @@ namespace _Project
     {
         [SerializeField] private int _lowerScore;
         
-        private readonly Regex _normalizationPattern = new(@"[а-я\s]+");
+        private readonly Regex _normalizationPattern = new(@"[а-яa-z\s]+");
 
         private string Preprocess(string text)
         {
@@ -22,7 +22,7 @@ namespace _Project
             if (matches.Count == 0)
                 return null;
             if (matches.Count == 1)
-                return matches[0].Value;
+                return matches[0].Value.Trim();
             var res = "";
             foreach (Match match in matches)
             {
@@ -32,17 +32,19 @@ namespace _Project
                     res += match.Value;
             }
 
-            return res.TrimEnd();
+            return res.Trim();
         }
 
         public (int score, string key) SearchMaxKey(string origin, IEnumerable<string> keys)
         {
+            var maxFuzz = int.MinValue;
+            string maxKey = null;
+            if (string.IsNullOrWhiteSpace(origin))
+                return (maxFuzz, maxKey);
+            
             origin = Preprocess(origin);
             origin = Normalize(origin);
             
-            
-            var maxFuzz = int.MinValue;
-            string maxKey = null;
             if (origin == null)
                 return (maxFuzz, maxKey);
             
