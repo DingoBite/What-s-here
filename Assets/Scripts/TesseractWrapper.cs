@@ -41,7 +41,7 @@ public class TesseractWrapper
 
     [DllImport(TesseractDllName)]
     private static extern void TessBaseAPISetImage2(IntPtr handle, IntPtr pix);
-
+    
     [DllImport(TesseractDllName)]
     private static extern int TessBaseAPIRecognize(IntPtr handle, IntPtr monitor);
 

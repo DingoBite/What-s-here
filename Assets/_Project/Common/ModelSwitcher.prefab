@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6025494638710457646}
   - component: {fileID: 894430144194818068}
   - component: {fileID: 631123523783140675}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5167541214815543674}
   - component: {fileID: 3945173264658084927}
   - component: {fileID: 8704853751846877839}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: ModelSwitcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5012239915740644905}
@@ -209,7 +209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 804780934825754775}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: ModelSwitcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,6 +301,10 @@ PrefabInstance:
       value: sudak
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e2ca6badabbf9074fb27533ed39d0d85, type: 3}
+      propertyPath: m_Layer
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2ca6badabbf9074fb27533ed39d0d85, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -365,6 +369,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7277cc6eeacadfe4b976b4c6df5c4c00, type: 3}
       propertyPath: m_Name
       value: sevastopol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7277cc6eeacadfe4b976b4c6df5c4c00, type: 3}
+      propertyPath: m_Layer
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7277cc6eeacadfe4b976b4c6df5c4c00, type: 3}
       propertyPath: m_IsActive
@@ -449,6 +457,10 @@ PrefabInstance:
       value: kerch
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 135d5d4a6281b8c46b235261b15c6db3, type: 3}
+      propertyPath: m_Layer
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 135d5d4a6281b8c46b235261b15c6db3, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -513,6 +525,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 77c17cd8b0c19d1418dbcbda1c17ac18, type: 3}
       propertyPath: m_Name
       value: simferopol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77c17cd8b0c19d1418dbcbda1c17ac18, type: 3}
+      propertyPath: m_Layer
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77c17cd8b0c19d1418dbcbda1c17ac18, type: 3}
       propertyPath: m_IsActive
