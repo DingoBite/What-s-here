@@ -42,7 +42,7 @@ namespace _Project.App
             _infoButton.gameObject.SetActive(false);
             _splash.gameObject.SetActive(true);
             _mainGameWindow.gameObject.SetActive(false);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(3f);
             _progress = 0;
             _playScreen.gameObject.SetActive(true);
             DOTween.To(
